@@ -1,0 +1,57 @@
+.inputs-form {
+  width:35%;
+}
+.field-container {
+  display:flex;
+  flex-direction: column;
+  gap:.5em;
+  margin-bottom:1rem;
+}
+
+.input-field {
+  padding:.9em ;
+  font-size:1rem;
+  border-radius:12px;
+  border:1px double hsl(245, 19%, 35%);
+  background-color: rgba(75, 72, 106, .25);
+  color: var(--main-text-color);
+  transition: background-color .15s linear;
+}
+
+.input-field:hover {
+  background-color:rgba(75, 72, 106, .6);
+}
+
+.input-field::placeholder {
+  color: hsl(245, 15%, 58%);
+  font-weight:500;
+}
+
+.input-label {
+  cursor:pointer;
+  font-weight:600;
+  align-self:flex-start;
+}
+
+.generate-btn {
+  width:100%;
+  padding:.8em 0;
+  border:none;
+  border-radius:10px;
+  font-size:1rem;
+  font-weight:700;
+  color: hsl(248, 70%, 10%);
+  background-color: hsl(7, 88%, 67%);
+  cursor:pointer;
+  transition: background-color .15s linear;
+}
+
+.generate-btn:hover {
+  background-color: hsl(7, 71%, 60%);
+}
+
+.generate-btn:focus, 
+.input-field:focus {
+  outline:2px double hsl(245, 15%, 58%);
+  outline-offset:2px;
+}

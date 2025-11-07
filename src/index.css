@@ -1,0 +1,24 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('./assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf');
+}
+
+body {
+  --main-text-color:  hsl(252, 6%, 83%);
+  background:  
+    url('./assets/images/pattern-squiggly-line-top.svg') right 100px no-repeat, 
+    url('./assets/images/pattern-lines.svg'), 
+    url('./assets/images/pattern-squiggly-line-bottom-desktop.svg') left 465px no-repeat,
+    url('./assets/images/pattern-circle.svg') no-repeat  78% 900%,
+    url('./assets/images/pattern-circle.svg') no-repeat left -170%,
+    url('./assets/images/background-desktop.png') right 10% / cover no-repeat
+  ;
+  font-family: 'Inconsolata', Arial;
+  color:#fff;
+}
