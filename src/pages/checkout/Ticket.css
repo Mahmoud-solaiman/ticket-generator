@@ -1,0 +1,50 @@
+.ticket-container {
+  padding-top: 100px;
+  display:flex;
+  justify-content: center;
+}
+
+.ticket {
+  width:600px;
+  height:280px;
+  background: url('../../assets/images/pattern-ticket.svg');
+  padding:1.8em 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ticket-header img {
+  width: 280px;
+}
+
+.conf-info {
+  font-size:1.15rem;
+  padding:.3em 0 0 3.5em;
+  color: rgba(210, 209, 214, 0.781);
+}
+
+.guest-info {
+  display:flex;
+  align-items: center;
+  gap:1em;
+}
+
+.person-image-container img {
+  width:70px;
+  border-radius:10px;
+}
+
+.guest-name {
+  font-weight: 500;
+  font-size:1.7rem;
+  margin-bottom: .5rem;
+}
+
+.github-info {
+  display: flex;
+  align-items:center;
+  gap:.45em;
+  font-size:1.15rem;
+  color: rgba(210, 209, 214, 0.781);
+}

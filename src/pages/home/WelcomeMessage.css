@@ -14,4 +14,19 @@
   font-size: 1.5rem;
   margin-top: 20px;
   color:var(--main-text-color);
+  text-align: center;
+}
+
+.person-name {
+  color: hsl(7, 86%, 67%); /*This is to be changed once the internet is back*/
+}
+
+.person-email {
+  cursor:pointer;
+  color: rgba(245, 114, 97, 0.863);
+  transition: color .15s linear;
+}
+
+.person-email:hover {
+  color: rgba(245, 114, 97, 0.603);
 }
