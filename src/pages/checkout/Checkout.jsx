@@ -2,14 +2,21 @@ import { Header } from "../../components/Header";
 import { CheckoutMessage } from "../../components/CheckoutMessage";
 import { Ticket } from "./Ticket";
 
-export function Checkout() {
+export function Checkout({ nameInput, emailInput, githubInput, image }) {
   return (
     <>
       <Header />
 
-      <CheckoutMessage />
+      <CheckoutMessage 
+        nameInput={nameInput} 
+        emailInput={emailInput} 
+      />
     
-      <Ticket />
+      <Ticket 
+        nameInput={nameInput} 
+        githubInput={githubInput} 
+        image={image}
+      />
     </>
   );
 }

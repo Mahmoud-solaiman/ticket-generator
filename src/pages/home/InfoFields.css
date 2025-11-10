@@ -43,11 +43,16 @@
   color: hsl(248, 70%, 10%);
   background-color: hsl(7, 88%, 67%);
   cursor:pointer;
-  transition: background-color .15s linear;
+  transition: all .15s linear;
 }
 
 .generate-btn:hover {
   background-color: hsl(7, 71%, 60%);
+}
+
+.generate-btn[disabled] {
+  background-color:gray;
+  opacity:.7;
 }
 
 .generate-btn:focus, 
