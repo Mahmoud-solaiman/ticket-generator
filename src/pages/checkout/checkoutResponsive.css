@@ -1,0 +1,44 @@
+@media (max-width: 350px) {
+  .ticket-container {
+    padding-top: 70px;
+  }
+
+  .ticket {
+    width: 95%;
+    height: 170px;
+    background-size: 100% 100%;
+    padding: 1em;
+  }
+
+  .ticket-header img {
+    width: 180px;
+  }
+
+  .conf-info {
+    font-size: .9rem;
+    padding-left: 2.2em;
+  }
+
+  .guest-info {
+    gap: .5em;
+  }
+
+  .person-image-container img {
+    width: 50px;
+  }
+
+  .guest-name {
+    font-size: 1.3rem;
+    margin-bottom:0;
+  }
+
+  .github-info {
+    gap: .2em;
+    font-size: .9rem;
+    color: rgba(210, 209, 214, 0.781);
+  }
+
+  .github-info img {
+    width:18px;
+  }
+}

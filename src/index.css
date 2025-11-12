@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,16 +11,33 @@
   src: url('./assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf');
 }
 
-body {
-  --main-text-color:  hsl(252, 6%, 83%);
-  background:  
-    url('./assets/images/pattern-squiggly-line-top.svg') right 100px no-repeat, 
-    url('./assets/images/pattern-lines.svg'), 
-    url('./assets/images/pattern-squiggly-line-bottom-desktop.svg') left 465px no-repeat,
-    url('./assets/images/pattern-circle.svg') no-repeat  78% 900%,
-    url('./assets/images/pattern-circle.svg') no-repeat left -170%,
-    url('./assets/images/background-desktop.png') right 10% / cover no-repeat
-  ;
+#root {
+  --main-text-color: hsl(252, 6%, 83%);
+  background:
+    url('./assets/images/pattern-squiggly-line-top.svg') right 100px no-repeat,
+    url('./assets/images/pattern-lines.svg'),
+    url('./assets/images/pattern-squiggly-line-bottom-desktop.svg') left 485px no-repeat,
+    url('./assets/images/pattern-circle.svg') no-repeat 40px -70px / 190px,
+    url('./assets/images/pattern-circle.svg') no-repeat 850px 430px / 190px,
+    url('./assets/images/background-desktop.png') right 10% / 100% no-repeat;
   font-family: 'Inconsolata', Arial;
-  color:#fff;
+  color: #fff;
+  padding-bottom: 1.5em;
+  height:100vh;
+}
+
+
+@media (max-width: 350px) {
+  #root {
+    background:
+      url('./assets/images/pattern-squiggly-line-top.svg') right 10px / 100px no-repeat,
+      url('./assets/images/pattern-lines.svg') 10%,
+      url('./assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg') left bottom / 300px no-repeat,
+      url('./assets/images/pattern-circle.svg') no-repeat -20px -20px / 100px ,
+      url('./assets/images/pattern-circle.svg') no-repeat 290px 450px / 100px ,
+      url('./assets/images/background-mobile.png') 0 0 / cover
+    ;
+    height:fit-content;
+    padding-bottom:8.4em;
+  }
 }

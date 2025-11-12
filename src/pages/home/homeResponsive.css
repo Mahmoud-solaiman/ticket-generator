@@ -1,0 +1,34 @@
+@media (max-width:350px) {
+  .header {
+    height:70px;
+  }
+
+  .header img {
+    width:170px;
+  }
+
+  .welcome-message {
+    width:100%;
+    font-size:1.5rem;
+    line-height:30px;
+  }
+
+  .sub-message {
+    font-size:1.1rem;
+    width:90%;
+    line-height:25px;
+    margin-top: 10px;
+  }
+
+  .upload-image-container {
+    width:95%;
+  }
+
+  .info-text {
+    font-size:.7rem;
+  }
+
+  .inputs-form {
+    width:95%;
+  }
+}

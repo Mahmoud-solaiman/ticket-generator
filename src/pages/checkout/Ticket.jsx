@@ -1,4 +1,5 @@
 import './Ticket.css';
+import './checkoutResponsive.css';
 import { TicketHeader } from './TicketHeader';
 import { TicketInfo } from './TicketInfo';
 

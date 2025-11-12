@@ -2,6 +2,7 @@ import { Header } from "../../components/Header";
 import { WelcomeMessage } from "./WelcomeMessage";
 import { UploadArea } from "./UploadArea";
 import { InfoFields } from "./InfoFields";
+import './homeResponsive.css';
 
 export function Home({ nameInput, emailInput, githubInput, setImage }) {
   return (
