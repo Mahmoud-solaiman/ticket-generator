@@ -90,3 +90,9 @@
 .btn.remove-btn {
   text-decoration:underline;
 }
+
+.upload-input-container.drag-over {
+  background-color:hsla(245, 19%, 35%, .8);
+  outline:2px double hsl(245, 15%, 58%);
+  outline-offset:2px;
+}
