@@ -17,7 +17,7 @@ function App() {
         githubInput={githubInput} 
         setImage={setImage}
       />} />
-      <Route path="/checkout" element={<Checkout 
+      <Route path="/ticket-generator/checkout" element={<Checkout 
         nameInput={nameInput} 
         emailInput={emailInput} 
         githubInput={githubInput} 
