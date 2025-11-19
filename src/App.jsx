@@ -11,7 +11,7 @@ function App() {
   const githubInput = useRef(null);
   return (
     <Routes>
-      <Route path="/" element={<Home 
+      <Route path="/ticket-generator" element={<Home 
         nameInput={nameInput} 
         emailInput={emailInput} 
         githubInput={githubInput} 
