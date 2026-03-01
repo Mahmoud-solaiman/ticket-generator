@@ -26,7 +26,7 @@
 }
 
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   #root {
     background:
       url('./assets/images/pattern-squiggly-line-top.svg') right 10px / 100px no-repeat,
@@ -36,7 +36,7 @@
       url('./assets/images/pattern-circle.svg') no-repeat 290px 450px / 100px ,
       url('./assets/images/background-mobile.png') 0 0 / cover
     ;
-    height:100vh;
+    /* height:100vh; */
   }
 
   html {

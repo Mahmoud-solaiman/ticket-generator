@@ -75,17 +75,14 @@ export function UploadArea({ setImage }) {
         />
         <div className="drag-text">
           {!isUploaded ? 'Drag and drop or click to upload' : ''}
-          {
-            isUploaded ?
+          {isUploaded &&
               <>
                 <button className="remove-btn btn" onPointerUp={() => {
                   uploadedImage.current.src = UploadIcon;
                   setIsUploaded(false);
                 }} >Remove image</button>
                 <button className="change-btn btn" onPointerUp={uploadFile}>Change image</button>
-              </> :
-              ''
-          }
+              </>}
         </div>
       </div>
       <p className="info-text" style={{ color: isBigger ? 'hsla(7, 86%, 67%, 0.61)' : 'hsl(245, 15%, 58%)' }}>
