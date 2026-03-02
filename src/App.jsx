@@ -14,15 +14,11 @@ function App() {
       <Route path="/" element={<Home 
         nameInput={nameInput} 
         emailInput={emailInput} 
-        githubInput={githubInput} 
+        githubInput={githubInput}
+        image={image}
         setImage={setImage}
       />} />
-      <Route path="/checkout" element={<Checkout 
-        nameInput={nameInput} 
-        emailInput={emailInput} 
-        githubInput={githubInput} 
-        image={image}
-      />} />
+      <Route path="/checkout" element={<Checkout />} />
     </Routes>
   );
 }

@@ -3,7 +3,7 @@ import validator from 'validator';
 import { useState } from 'react';
 import './InfoFields.css';
 
-export function InfoFields({ nameInput, emailInput, githubInput }) {
+export function InfoFields({ nameInput, emailInput, githubInput, image }) {
   const [ isDisabled, setIsDisabled ] = useState(true);
 
   const toggleDisabled = () => {
@@ -17,6 +17,16 @@ export function InfoFields({ nameInput, emailInput, githubInput }) {
     } else {
       setIsDisabled(true);
     }
+  }
+
+  const saveLogInInfo = () => {
+    const logInInfo = {
+      name: nameInput.current.value,
+      email: emailInput.current.value,
+      github: githubInput.current.value,
+      image: image
+    }
+    sessionStorage.setItem('login-info', JSON.stringify(logInInfo));
   }
 
   return (
@@ -55,7 +65,7 @@ export function InfoFields({ nameInput, emailInput, githubInput }) {
             onChange={toggleDisabled}  
           />
         </div>
-        <Link to="checkout">
+        <Link to="checkout" onClick={saveLogInInfo}>
           <button 
             disabled={isDisabled} 
             className="generate-btn"

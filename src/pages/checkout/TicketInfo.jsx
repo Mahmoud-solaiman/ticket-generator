@@ -7,10 +7,10 @@ export function TicketInfo({ nameInput, githubInput, image }) {
         <img src={image} alt="avatar" />
       </div>
       <div className="personal-info">
-        <h2 className="guest-name">{nameInput.current.value}</h2>
+        <h2 className="guest-name">{nameInput}</h2>
         <div className="github-info">
           <img src={Github} alt="github icon" />
-          <span className="guest-github-username">{githubInput.current.value}</span>
+          <span className="guest-github-username">{githubInput}</span>
         </div>
       </div>
     </div>
