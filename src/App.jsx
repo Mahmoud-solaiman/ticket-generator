@@ -11,13 +11,13 @@ function App() {
   const githubInput = useRef(null);
   return (
     <Routes>
-      <Route path="/ticket-generator" element={<Home 
+      <Route path="/" element={<Home 
         nameInput={nameInput} 
         emailInput={emailInput} 
         githubInput={githubInput} 
         setImage={setImage}
       />} />
-      <Route path="/ticket-generator/checkout" element={<Checkout 
+      <Route path="/checkout" element={<Checkout 
         nameInput={nameInput} 
         emailInput={emailInput} 
         githubInput={githubInput} 

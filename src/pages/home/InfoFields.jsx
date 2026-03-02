@@ -5,9 +5,6 @@ import './InfoFields.css';
 
 export function InfoFields({ nameInput, emailInput, githubInput }) {
   const [ isDisabled, setIsDisabled ] = useState(true);
-  // const nameInput = useRef(null);
-  // const emailInput = useRef(null);
-  // const githubInput = useRef(null);
 
   const toggleDisabled = () => {
     if (

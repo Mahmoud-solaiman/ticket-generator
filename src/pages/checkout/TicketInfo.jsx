@@ -1,5 +1,4 @@
 import Github from "../../assets/images/icon-github.svg";
-// import Avatar from "../../assets/images/image-avatar.jpg";
 
 export function TicketInfo({ nameInput, githubInput, image }) {
   return (
